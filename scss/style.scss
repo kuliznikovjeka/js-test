@@ -1,0 +1,94 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&display=swap");
+/*----------------------------*/
+
+body {
+	font-family: "Gothic A1", sans-serif;
+}
+
+[class*="__container"] {
+	max-width: 1182px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(116.33deg, rgba(0, 102, 255, 0.2) 0.29%, #7dfdee 51.12%, rgba(0, 255, 10, 0.2) 99.58%);
+}
+
+.test-main {
+	padding: 100px 0;
+	// .test-main__container
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	// .test-main__item
+
+	&__item {
+		background: black;
+		border-radius: 27px;
+		padding: 50px;
+	}
+
+	// .test-main__title
+
+	&__title {
+		text-align: center;
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #fff;
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	// .test-main__body
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .test-main__label
+
+	&__label {
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: 600;
+		color: #fff;
+	}
+
+	// .test-main__input
+
+	&__input {
+		border: 3px solid #ffffff;
+		background: none;
+		filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.35));
+		border-radius: 12px;
+		padding: 5px 10px;
+		color: #fff;
+		max-width: 300px;
+	}
+
+	&__button {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 23px;
+		text-align: center;
+		text-transform: uppercase;
+		background: #fff;
+		padding: 23px 32px;
+		border-radius: 12px;
+	}
+}
